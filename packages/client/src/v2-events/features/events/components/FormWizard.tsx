@@ -23,9 +23,9 @@ export const messages = defineMessages({
     id: 'v2.buttons.back'
   },
   backToReview: {
-    defaultMessage: 'Back to review',
-    description: 'Back to review button text',
-    id: 'v2.buttons.backToReview'
+    defaultMessage: 'Go to review',
+    description: 'Go to review button text',
+    id: 'v2.buttons.backToReviewsbb'
   }
 })
 
@@ -79,12 +79,9 @@ export const FormWizard = ({
             >
               {continueButtonText}
             </Button>
-
-            {showReviewButton && (
-              <Button size="large" type="secondary" onClick={onSubmit}>
-                {intl.formatMessage(messages.backToReview)}
-              </Button>
-            )}
+            <Button size="large" type="secondary" onClick={onSubmit}>
+              {intl.formatMessage(messages.backToReview)}
+            </Button>
           </Stack>
         </Content>
       </Frame.Section>
