@@ -1236,7 +1236,7 @@ class RegisterFormView extends React.Component<FullProps, State> {
                                 )
                               }}
                             >
-                              {intl.formatMessage(messages.backToReviewButton)}
+                              {intl.formatMessage(messages.goToReviewButton)}
                             </Button>
                           ].filter(Boolean) as React.ReactElement[]
                         }
