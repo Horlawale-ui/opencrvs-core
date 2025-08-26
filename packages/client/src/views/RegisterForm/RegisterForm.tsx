@@ -1211,37 +1211,33 @@ class RegisterFormView extends React.Component<FullProps, State> {
                                 )}
                               </Button>
                             ),
-                            declaration.review && (
-                              <Button
-                                id="back-to-review-button"
-                                key="back-to-review-button"
-                                type="secondary"
-                                size="large"
-                                className="item"
-                                fullWidth
-                                onClick={() => {
-                                  this.continueButtonHandler(
-                                    this.props.pageRoute,
-                                    declaration.id,
-                                    declaration.submissionStatus &&
-                                      declaration.submissionStatus ===
-                                        SUBMISSION_STATUS.DRAFT
-                                      ? 'preview'
-                                      : 'review',
-                                    declaration.submissionStatus &&
-                                      declaration.submissionStatus ===
-                                        SUBMISSION_STATUS.DRAFT
-                                      ? 'preview-view-group'
-                                      : 'review-view-group',
-                                    declaration.event.toLowerCase()
-                                  )
-                                }}
-                              >
-                                {intl.formatMessage(
-                                  messages.backToReviewButton
-                                )}
-                              </Button>
-                            )
+                            <Button
+                              id="back-to-review-button"
+                              key="back-to-review-button"
+                              type="secondary"
+                              size="large"
+                              className="item"
+                              fullWidth
+                              onClick={() => {
+                                this.continueButtonHandler(
+                                  this.props.pageRoute,
+                                  declaration.id,
+                                  declaration.submissionStatus &&
+                                    declaration.submissionStatus ===
+                                      SUBMISSION_STATUS.DRAFT
+                                    ? 'preview'
+                                    : 'review',
+                                  declaration.submissionStatus &&
+                                    declaration.submissionStatus ===
+                                      SUBMISSION_STATUS.DRAFT
+                                    ? 'preview-view-group'
+                                    : 'review-view-group',
+                                  declaration.event.toLowerCase()
+                                )
+                              }}
+                            >
+                              {intl.formatMessage(messages.backToReviewButton)}
+                            </Button>
                           ].filter(Boolean) as React.ReactElement[]
                         }
                       >
