@@ -7,6 +7,7 @@
 - **Redis password support with authorization and authentication** [#9338](https://github.com/opencrvs/opencrvs-core/pull/9338). By default password is disabled for local development environment and enabled on server environments.
 - **Certificate Template Conditionals**: Certificate template conditionals allow dynamic template selection based on print history using the template conditional helpers.. [#7585](https://github.com/opencrvs/opencrvs-core/issues/7585)
 - Expose number of copies printed for a certificate template so it can be printed on the certificate. [#7586](https://github.com/opencrvs/opencrvs-core/issues/7586)
+- Always display a "Go to review" button on every page of any form of events to allow easier navigation between the preview and the form fields. [#10132](https://github.com/opencrvs/opencrvs-core/issues/10132)
 
 ### Improvements
 
