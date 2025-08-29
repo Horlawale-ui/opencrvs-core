@@ -106,7 +106,6 @@ export function Pages() {
         formPages={declarationPages}
         pageId={currentPageId}
         setFormData={(data) => setFormValues(data)}
-        showReviewButton={searchParams.from === 'review'}
         onPageChange={(nextPageId: string) =>
           navigate(
             ROUTES.V2.EVENTS.DECLARE.PAGES.buildPath(

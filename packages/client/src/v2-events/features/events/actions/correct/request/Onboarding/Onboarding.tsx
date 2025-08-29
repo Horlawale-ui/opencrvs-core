@@ -94,7 +94,6 @@ export function Onboarding() {
         formPages={formPages}
         pageId={currentPageId}
         setFormData={(data) => setAnnotation(data)}
-        showReviewButton={false}
         validateBeforeNextPage={true}
         onPageChange={(nextPageId: string) => {
           return navigate(

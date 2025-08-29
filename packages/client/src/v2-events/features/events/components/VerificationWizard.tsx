@@ -44,7 +44,6 @@ export const VerificationWizard = ({
   pageTitle,
   onNextPage,
   onPreviousPage,
-  showReviewButton,
   pageConfig,
   onVerifyAction
 }: FormWizardProps & {
@@ -131,11 +130,9 @@ export const VerificationWizard = ({
               {intl.formatMessage(pageConfig.actions.cancel.label)}
             </Button>
 
-            {showReviewButton && (
-              <Button size="large" type="secondary" onClick={onSubmit}>
-                {intl.formatMessage(formWizardMessages.backToReview)}
-              </Button>
-            )}
+            <Button size="large" type="secondary" onClick={onSubmit}>
+              {intl.formatMessage(formWizardMessages.goToReview)}
+            </Button>
           </Stack>
         </Content>
       </Frame.Section>
